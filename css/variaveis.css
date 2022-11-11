@@ -1,0 +1,15 @@
+:root{
+    --laranja: hsl(35, 77%, 62%);
+    --vermelho: hsl(5, 85%, 63%);
+    --branco2: hsl(36, 100%, 99%);
+    --cinza: hsl(233, 8%, 79%);
+    --cinza-escuro: hsl(236, 13%, 42%);
+    --azul-dark: hsl(240, 100%, 5%);
+    --size-paragrafo: 15px;
+    --tipografia: 'Inter', sans-serif;
+}
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

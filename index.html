@@ -1,60 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | News homepage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variaveis.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+  </head>
+  <body>
+
+    <header>
+      <div class="header-container">
+        <a href="">
+          <img src="./assets/images/logo.svg" alt="">
+        </a>
+
+        <nav>
+          <input type="checkbox" id="menu-hamburguer">
+          <label for="menu-hamburguer">
+            <div class="menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
   
-  <title>Frontend Mentor | News homepage</title>
+          <ul>
+            <li class="home">
+              <a href="">Home</a> 
+            </li>
+            <li class="new">
+              <a href="">New</a>
+            </li>
+            <li class="popular">
+              <a href="">Popular</a>
+            </li>
+            <li class="trending">
+              <a href="">Trending</a>
+            </li>
+            <li class="categories">
+              <a href="">Categories</a>
+            </li>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    <main>
+      <picture>
+        <source media="(max-width: 900px)" srcset="./assets/images/image-web-3-mobile.jpg">
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+      </picture>
 
-  The Bright Future of Web 3.0?
+      <h1>
+        The Bright Future of Web 3.0?
+      </h1>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+      <div class="box-main">
+        <p>
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?
+        </p>
+        
+        <a href="" class="botao">READ MORE</a>
 
-  Read more
+      </div>
+    </main>
 
-  New 
+    <aside>
+      <h2>New</h2>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+      <div class="box hidrogen">
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+      <div class="box downsides">
+        <h3>The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+      <div class="box funding">
+        <h3>Is VC Funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </aside>
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+    <section class="recomendacao">
+      <div class="box-1">
+        <h3>01</h3>
+        <span>Reviving Retro PCs</span>
+        <p>
+          What happens when old PCs are given modern upgrades?
+        </p>
+      </div>
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
+      <div class="box-2">
+        <h3>02</h3>
+        <span>Top 10 Laptops of 2022</span>
+        <p>
+          Our best picks for various needs and budgets.
+        </p>
+      </div>
 
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="box-3">
+        <h3>03</h3>
+        <span>The Growth of Gaming</span>
+        <p>
+          How the pandemic has sparked fresh opportunities.
+        </p>
+      </div>
+    </section>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>

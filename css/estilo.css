@@ -1,0 +1,108 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    /* 16px */
+    font-family: var(--tipografia);
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header" 
+    "main main aside"   
+    "main main aside"
+    "recomendacao recomendacao recomendacao"
+    ;
+    background-color: var(--branco2);
+    padding: 20px 40px;
+    grid-gap: 30px;
+}
+header{
+    grid-area: header;
+}
+header .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "picture picture"
+    "h1 box-main"
+    ;
+    grid-gap: 30px;
+}
+main picture{
+    grid-area: picture;
+}
+main picture img{
+    width: 100%;
+}
+main h1{
+    grid-area: h1;
+    font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+}
+main .box-main{
+    grid-area: box-main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .box-main p{
+    color: var(--cinza-escuro);
+}
+main .box-main a{
+    width: 120px;
+    padding: 10px 30px;
+    background-color: var(--vermelho);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+main .box-main a:hover{
+    background-color: var(--azul-dark);
+}
+
+
+aside{
+    grid-area: aside;
+    background-color: var(--azul-dark);
+    color: white;
+    padding: 20px;
+}
+aside h2{
+    color: var(--laranja);
+    font-size: 4rem;
+}
+aside .box{
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+aside .box:nth-child(3), :nth-child(4){
+    border-top: 0.2px solid var(--cinza);
+}
+
+
+
+
+
+
+
+
+
+.recomendacao{
+    grid-area: recomendacao;
+}
