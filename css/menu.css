@@ -69,7 +69,7 @@ header input:checked ~ label .hamburguer::after{
     bottom: 0;
 }
 
-@media (max-width: 900px){
+@media (max-width: 650px){
 
     header .menu{
         display: block;
@@ -92,6 +92,13 @@ header input:checked ~ label .hamburguer::after{
         background-color: white;
         padding: 20px;
     }
+
+    @media(max-width: 550px){
+        header nav ul{
+            width: 120px;
+        }
+    }
+
     header nav ul a{
         text-align: center;
         padding: 20px;

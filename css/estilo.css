@@ -102,6 +102,11 @@ aside .box:nth-child(3), .box:nth-child(4){
 }
 aside .box h3{
     font-size: 1.8rem;
+    transition: 0.25s;
+    cursor: pointer;
+}
+aside .box h3:hover{
+    color: var(--laranja);
 }
 aside .box p{
     margin-top: 15px;
@@ -111,6 +116,7 @@ aside .box p{
 
 
 .recomendacao{
+    margin-top: 30px;
     grid-area: recomendacao;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -145,6 +151,11 @@ aside .box p{
     font-weight: 800;
     font-size: 1.8rem;
     margin: 10px 0px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.recomendacao .box-info span:hover{
+    color: var(--vermelho);
 }
 .recomendacao .box-info p{
     color: var(--cinza-escuro);
@@ -190,4 +201,15 @@ aside .box p{
         margin: 0 auto;
     }
 
+}
+
+/* RESPONSIVIDADE CELULAR 375PX */
+@media(max-width: 500px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .recomendacao .box picture{
+        width: 50px;
+    }
 }
