@@ -13,10 +13,13 @@ body{
     "main main aside"   
     "main main aside"
     "recomendacao recomendacao recomendacao"
+    "creditos creditos creditos"
     ;
     background-color: var(--branco2);
     padding: 20px 40px;
     grid-gap: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 header{
     grid-area: header;
@@ -25,7 +28,7 @@ header .header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 0px;
 }
 
 
@@ -82,6 +85,9 @@ aside{
     background-color: var(--azul-dark);
     color: white;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 aside h2{
     color: var(--laranja);
@@ -91,18 +97,97 @@ aside .box{
     padding-top: 30px;
     margin-bottom: 30px;
 }
-aside .box:nth-child(3), :nth-child(4){
+aside .box:nth-child(3), .box:nth-child(4){
     border-top: 0.2px solid var(--cinza);
 }
-
-
-
-
-
-
-
+aside .box h3{
+    font-size: 1.8rem;
+}
+aside .box p{
+    margin-top: 15px;
+    color: var(--cinza);
+    font-size: 1.5rem;
+}
 
 
 .recomendacao{
     grid-area: recomendacao;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "box1 box2 box3"
+    ;
+    grid-gap: 30px;
+}
+.recomendacao .box{
+    display: flex;
+    align-items: center;
+}
+.recomendacao .box picture{
+    max-width: 120px;
+    min-width: 90px;
+    margin-right: 30px;
+}
+.recomendacao .box img{
+    width: 100%;
+}
+.recomendacao .box .box-info{
+    display: flex;
+    flex-direction: column;
+    align-self: auto;
+}
+.recomendacao .box .box-info h3{
+    font-size: 3.5rem;
+    color: var(--cinza);
+}
+.recomendacao .box-info span{
+    color: var(--azul-dark);
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin: 10px 0px;
+}
+.recomendacao .box-info p{
+    color: var(--cinza-escuro);
+    font-size: 1.5rem;
+}
+.recomendacao .box.box1{
+    grid-area: box1;
+}
+.recomendacao .box.box2{
+    grid-area: box2;
+}
+.recomendacao .box.box3{
+    grid-area: box3;
+}
+
+
+.creditos{
+    grid-area: creditos;
+    display: absolute;
+}
+.creditos { font-size: 11px; margin: 0 auto; }
+.creditos a { color: hsl(228, 45%, 44%); }
+
+
+/* RESPONSIVO TABLET */
+@media(max-width: 900px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "recomendacao"
+        "creditos"   
+        ;
+    }
+    aside{
+        margin: 0 auto;
+    }
+    .recomendacao{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
 }
