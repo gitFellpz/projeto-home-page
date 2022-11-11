@@ -213,3 +213,50 @@ aside .box p{
         width: 50px;
     }
 }
+
+
+/* Responsividade 4K */
+@media(min-width: 2400px){
+    body{
+        max-width: 1900px;
+    }
+    main h1{
+        font-size: 6rem;
+    }
+    main .box-main p{
+        font-size: 2.7rem;
+    }
+    main .box-main a{
+        width: 200px;
+        font-size: 2.5rem;
+    }
+
+    
+    aside h2{
+        font-size: 5rem;
+    }
+    aside .box{
+        margin-top: 35px;        
+    }
+    aside .box h3{
+        font-size: 3rem;
+    }
+    aside .box p{
+        font-size: 2.7rem;
+    }
+
+
+    .recomendacao .box-info h3{
+        font-size: 3rem;
+    }
+    .recomendacao .box .box-info span{
+        font-size: 2.7rem;
+    }
+    .recomendacao .box .box-info p{
+        font-size: 2.5rem;
+    }
+
+    .creditos{
+        font-size: 2rem;
+    }
+}
